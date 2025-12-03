@@ -215,18 +215,14 @@ main {
   height: 100%;
   display: block;
   background-color: #000000;
+  min-height: 300px;
 }
 
-.model-loading {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: #ffffff;
-  font-size: 0.9rem;
-  text-align: center;
-  pointer-events: none;
-  z-index: 1;
+/* Ensure model-viewer renders properly */
+model-viewer {
+  --poster-color: transparent;
+  --progress-bar-color: #ffffff;
+  --progress-mask: #000000;
 }
 
 .placeholder-3d {
