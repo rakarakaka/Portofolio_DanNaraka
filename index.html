@@ -13,8 +13,10 @@
     <meta http-equiv="Referrer-Policy" content="strict-origin-when-cross-origin" />
     <link rel="stylesheet" href="styles.css" />
     <!-- model-viewer must load before custom elements are parsed -->
-    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
-    <script nomodule src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"></script>
+    <script type="module">
+      import 'https://unpkg.com/@google/model-viewer@latest/dist/model-viewer.min.js';
+    </script>
+    <script nomodule src="https://unpkg.com/@google/model-viewer@latest/dist/model-viewer-legacy.js"></script>
   </head>
   <body>
     <header class="site-header">
