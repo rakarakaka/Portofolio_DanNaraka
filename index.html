@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <meta
+      name="description"
+      content="Personal portfolio showcasing 3D work, art, and articles."
+    />
+    <!-- Basic security-related meta tags (helpful if you later serve with proper headers) -->
+    <meta http-equiv="X-Content-Type-Options" content="nosniff" />
+    <meta http-equiv="Referrer-Policy" content="strict-origin-when-cross-origin" />
+    <link rel="stylesheet" href="styles.css" />
+    <!-- model-viewer must load before custom elements are parsed -->
+    <script type="module">
+      import 'https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js';
+    </script>
+    <script nomodule src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="logo">My Portfolio</div>
+      <nav class="main-nav" aria-label="Main navigation">
+        <button
+          class="nav-toggle"
+          aria-label="Toggle navigation"
+          aria-expanded="false"
+        >
+          ☰
+        </button>
+        <ul class="nav-links">
+          <li><a href="#preview-3d">3D Preview</a></li>
+          <li><a href="#art">Art</a></li>
+          <li><a href="#articles">Articles</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section id="preview-3d" class="section">
+        <div class="section-header">
+          <h1>3D Preview</h1>
+          <p>Showcase your 3D assets. Each box represents one of your GLB models.</p>
+        </div>
+        <div class="card-grid">
+          <article class="card">
+            <div class="card-media">
+              <model-viewer
+                src="3dAsset/cincau.glb"
+                alt="3D model of Cincau"
+                camera-controls
+                auto-rotate
+                auto-rotate-delay="0"
+                interaction-policy="allow-when-focused"
+                loading="eager"
+                reveal="interaction"
+                shadow-intensity="1"
+                exposure="1"
+                ar
+                ar-modes="webxr scene-viewer quick-look"
+                style="width: 100%; height: 100%; background-color: #000000;"
+              >
+                <div slot="poster" class="model-loading">Loading Cincau...</div>
+              </model-viewer>
+            </div>
+            <div class="card-body">
+              <h2 class="card-title">Cincau</h2>
+              <p class="card-text">
+                3D asset file: <code>cincau.glb</code>. Interactive 3D model viewer - click and drag to rotate, scroll to zoom.
+              </p>
+            </div>
+          </article>
+          <article class="card">
+            <div class="card-media">
+              <model-viewer
+                src="3dAsset/indomi.glb"
+                alt="3D model of Indomi"
+                camera-controls
+                auto-rotate
+                auto-rotate-delay="0"
+                interaction-policy="allow-when-focused"
+                loading="eager"
+                reveal="interaction"
+                shadow-intensity="1"
+                exposure="1"
+                ar
+                ar-modes="webxr scene-viewer quick-look"
+                style="width: 100%; height: 100%; background-color: #000000;"
+              >
+                <div slot="poster" class="model-loading">Loading Indomi...</div>
+              </model-viewer>
+            </div>
+            <div class="card-body">
+              <h2 class="card-title">Indomi</h2>
+              <p class="card-text">
+                3D asset file: <code>indomi.glb</code>. Interactive 3D model viewer - click and drag to rotate, scroll to zoom.
+              </p>
+            </div>
+          </article>
+          <article class="card">
+            <div class="card-media">
+              <model-viewer
+                src="3dAsset/nasgor.glb"
+                alt="3D model of Nasgor"
+                camera-controls
+                auto-rotate
+                auto-rotate-delay="0"
+                interaction-policy="allow-when-focused"
+                loading="eager"
+                reveal="interaction"
+                shadow-intensity="1"
+                exposure="1"
+                ar
+                ar-modes="webxr scene-viewer quick-look"
+                style="width: 100%; height: 100%; background-color: #000000;"
+              >
+                <div slot="poster" class="model-loading">Loading Nasgor...</div>
+              </model-viewer>
+            </div>
+            <div class="card-body">
+              <h2 class="card-title">Nasgor</h2>
+              <p class="card-text">
+                3D asset file: <code>nasgor.glb</code>. Interactive 3D model viewer - click and drag to rotate, scroll to zoom.
+              </p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="art" class="section">
+        <div class="section-header">
+          <h1>Art Gallery</h1>
+          <p>A selection of your illustrations, paintings, or concept art.</p>
+        </div>
+        <div class="card-grid">
+          <article class="card">
+            <div class="card-media placeholder-art" aria-hidden="true"></div>
+            <div class="card-body">
+              <h2 class="card-title">Artwork Title</h2>
+              <p class="card-text">
+                Describe your art piece here. Mention tools, style, or story.
+              </p>
+            </div>
+          </article>
+          <article class="card">
+            <div class="card-media placeholder-art" aria-hidden="true"></div>
+            <div class="card-body">
+              <h2 class="card-title">Another Artwork</h2>
+              <p class="card-text">
+                Add more art entries by copying this card block.
+              </p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="articles" class="section">
+        <div class="section-header">
+          <h1>Articles</h1>
+          <p>Write about your process, tutorials, or thoughts on design and 3D.</p>
+        </div>
+        <div class="articles-list">
+          <article class="article-item">
+            <h2 class="article-title">
+              <a href="#" rel="noopener noreferrer">How I Created My Favorite 3D Scene</a>
+            </h2>
+            <p class="article-meta">December 3, 2025 · 5 min read</p>
+            <p class="article-excerpt">
+              A short summary of the article. Replace this with your actual content or link
+              to an external blog.
+            </p>
+          </article>
+          <article class="article-item">
+            <h2 class="article-title">
+              <a href="#" rel="noopener noreferrer">My Art Workflow in Black &amp; White</a>
+            </h2>
+            <p class="article-meta">November 10, 2025 · 3 min read</p>
+            <p class="article-excerpt">
+              Talk about your inspirations, tools, and how you approach monochrome designs.
+            </p>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>&copy; <span id="year"></span> Your Name. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js" defer></script>
+  </body>
+  </html>
+
+
