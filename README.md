@@ -19,11 +19,10 @@ A modern, secure portfolio website showcasing 3D assets, art, and articles with 
 
 ## 🌐 Live Website
 
-**Your portfolio is live on GitHub Pages!**
+Your portfolio is hosted on GitHub Pages! Visit:
+**https://rakarakaka.github.io/Portofolio_DanNaraka/**
 
-Visit: **https://rakarakaka.github.io/Portofolio_DanNaraka/**
-
-The website is automatically deployed whenever you push changes to the `main` branch.
+The 3D models work perfectly on GitHub Pages since it serves over HTTPS.
 
 ## Getting Started
 
@@ -54,7 +53,7 @@ The website is automatically deployed whenever you push changes to the `main` br
    http://localhost:8000
    ```
 
-**Note**: The 3D models require a web server (HTTP/HTTPS) and cannot be viewed by opening the HTML file directly due to browser security restrictions. When hosted on GitHub Pages, the models will work automatically!
+**Note**: The 3D models require a local web server (HTTP) and cannot be viewed by opening the HTML file directly due to browser security restrictions.
 
 ## Project Structure
 
@@ -78,17 +77,6 @@ portofolio/
 - Modify `styles.css` to adjust colors and styling (currently black & white theme)
 - Add your own 3D models to the `3dAsset/` folder and update the HTML
 - Replace placeholder art and article content with your own
-
-## 🚀 Deployment
-
-This repository uses GitHub Actions to automatically deploy to GitHub Pages. The workflow is configured in `.github/workflows/pages.yml`.
-
-### Manual Setup (if needed)
-
-1. Go to your repository **Settings**
-2. Navigate to **Pages** in the left sidebar
-3. Under **Source**, select **GitHub Actions**
-4. The site will be automatically deployed on every push to `main`
 
 ## License
 
