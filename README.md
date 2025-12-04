@@ -35,7 +35,7 @@ The 3D models work perfectly on GitHub Pages since it serves over HTTPS.
 
 1. Clone this repository:
    ```bash
-   git clone https://github.com/YOUR_USERNAME/YOUR_REPO_NAME.git
+   git clone https://github.com/rakarakaka/Portofolio_DanNaraka.git
    cd portofolio
    ```
 
